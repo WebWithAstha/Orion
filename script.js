@@ -31,13 +31,13 @@ function loco(){
 } 
 loco();
 $('#page1 h1').textillate({ in: { effect: 'fadeIn' } });
-gsap.to("#page1",{
+gsap.to("#page1 h1,#page1 h3",{
   opacity:0,
   scrollTrigger:{
     trigger:"#page1",
     scroller:"#main",
     start:"top 0%",
-    end:"top -100%",
+    end:"top -80%",
     scrub:2,
     // markers:true
   } 
